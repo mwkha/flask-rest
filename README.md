@@ -140,7 +140,9 @@ The project uses python and kafka with zookeeper (Either locally or docker)
   ```
 * Useful commands inside postgres
   ```sh
-  \l 
+  \l #to list all databases
+  \c db_name #connect to database db_name
+  \dt #to list all tables within the database after connection
   ```
 
 
