@@ -2,7 +2,6 @@
 <a name="readme-top"></a>
 
 
-
 <!-- PROJECT SHIELDS -->
 <!--
 *** I'm using markdown "reference style" links for readability.
@@ -23,23 +22,23 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="hhttps://github.com/mwkha/kafka-flask-app">
+  <a href="hhttps://github.com/mwkha/flask-rest">
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-<h3 align="center">Food ordering app with flask and kafka</h3>
+<h3 align="center">Flask app capturing REST api calls cars and car sales details via REST api's into postgres db</h3>
 
   <p align="center">
-    A simple food ordering app using flask to serve web app and kafka to orchestrate events between web pages.
+    Flask app that captures car details and car sales details via REST api's and stores them into a postgres db.
     <br />
-    <a href="https://github.com/mwkha/kafka-flask-app"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/mwkha/flask-rest"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/mwkha/kafka-flask-app">View Demo</a>
+    <a href="https://github.com/mwkha/flask-rest">View Demo</a>
     ·
-    <a href="https://github.com/mwkha/kafka-flask-app/issues">Report Bug</a>
+    <a href="https://github.com/mwkha/flask-rest/issues">Report Bug</a>
     ·
-    <a href="https://github.com/mwkha/kafka-flask-app/issues">Request Feature</a>
+    <a href="https://github.com/mwkha/flask-rest/issues">Request Feature</a>
   </p>
 </div>
 
@@ -78,36 +77,19 @@
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
-Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `mwkha`, `kafka-flask-app`, `twitter_handle`, `linkedin_username`, `email_client`, `email`, `project_title`, `project_description`
+Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `mwkha`, `flask-rest`, `twitter_handle`, `linkedin_username`, `email_client`, `email`, `project_title`, `project_description`
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-### Built With
-
-* [![Next][Next.js]][Next-url]
-* [![React][React.js]][React-url]
-* [![Vue][Vue.js]][Vue-url]
-* [![Angular][Angular.io]][Angular-url]
-* [![Svelte][Svelte.dev]][Svelte-url]
-* [![Laravel][Laravel.com]][Laravel-url]
-* [![Bootstrap][Bootstrap.com]][Bootstrap-url]
-* [![JQuery][JQuery.com]][JQuery-url]
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 
 <!-- GETTING STARTED -->
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
 To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
-The project uses python and kafka with zookeeper (Either locally or docker)
+The project uses python, insomnia for requests and postgres using docker.
 * docker for macOS
   ```sh
   brew install docker
@@ -162,7 +144,7 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 - [ ] Feature 3
     - [ ] Nested Feature
 
-See the [open issues](https://github.com/mwkha/kafka-flask-app/issues) for a full list of proposed features (and known issues).
+See the [open issues](https://github.com/mwkha/flask-rest/issues) for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -200,7 +182,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - email@email_client.com
 
-Project Link: [https://github.com/mwkha/kafka-flask-app](https://github.com/mwkha/kafka-flask-app)
+Project Link: [https://github.com/mwkha/flask-rest](https://github.com/mwkha/flask-rest)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -219,16 +201,16 @@ Project Link: [https://github.com/mwkha/kafka-flask-app](https://github.com/mwkh
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/mwkha/kafka-flask-app.svg?style=for-the-badge
-[contributors-url]: https://github.com/mwkha/kafka-flask-app/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/mwkha/kafka-flask-app.svg?style=for-the-badge
-[forks-url]: https://github.com/mwkha/kafka-flask-app/network/members
-[stars-shield]: https://img.shields.io/github/stars/mwkha/kafka-flask-app.svg?style=for-the-badge
-[stars-url]: https://github.com/mwkha/kafka-flask-app/stargazers
-[issues-shield]: https://img.shields.io/github/issues/mwkha/kafka-flask-app.svg?style=for-the-badge
-[issues-url]: https://github.com/mwkha/kafka-flask-app/issues
-[license-shield]: https://img.shields.io/github/license/mwkha/kafka-flask-app.svg?style=for-the-badge
-[license-url]: https://github.com/mwkha/kafka-flask-app/blob/master/LICENSE.txt
+[contributors-shield]: https://img.shields.io/github/contributors/mwkha/flask-rest.svg?style=for-the-badge
+[contributors-url]: https://github.com/mwkha/flask-rest/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/mwkha/flask-rest.svg?style=for-the-badge
+[forks-url]: https://github.com/mwkha/flask-rest/network/members
+[stars-shield]: https://img.shields.io/github/stars/mwkha/flask-rest.svg?style=for-the-badge
+[stars-url]: https://github.com/mwkha/flask-rest/stargazers
+[issues-shield]: https://img.shields.io/github/issues/mwkha/flask-rest.svg?style=for-the-badge
+[issues-url]: https://github.com/mwkha/flask-rest/issues
+[license-shield]: https://img.shields.io/github/license/mwkha/flask-rest.svg?style=for-the-badge
+[license-url]: https://github.com/mwkha/flask-rest/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/linkedin_username
 [product-screenshot]: images/screenshot.png
