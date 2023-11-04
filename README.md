@@ -136,7 +136,7 @@ The project uses python, insomnia for requests and postgres using docker OR brew
 
 * OPTIONAL running postgres locally 
   ```sh
-  ./start-services.sh
+  ./services.sh start
   psql postgres
   CREATE ROLE newUser WITH LOGIN PASSWORD ‘password’; # Create new user with pwdd
   ALTER ROLE newUser CREATEDB; # Allow new user to create databases
