@@ -89,7 +89,7 @@ To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
-The project uses python, insomnia for requests and postgres using docker.
+The project uses python, insomnia for requests and postgres using docker OR brew.
 * docker for macOS
   ```sh
   brew install docker
@@ -101,6 +101,11 @@ The project uses python, insomnia for requests and postgres using docker.
 * insomnia for macOS
   ```sh
   brew install --cask insomnia
+  ```
+* OPTIONAL postgres and pgadmin4 via brew (If using docker don't need this)
+  ```sh
+  brew install postgresql@14
+  brew install --cask pgadmin4
   ```
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -122,11 +127,23 @@ The project uses python, insomnia for requests and postgres using docker.
   ```
 * Useful commands inside postgres
   ```sh
-  \l #to list all databases
-  \c db_name #connect to database db_name
-  \dt #to list all tables within the database after connection
+  \l # to list all databases
+  \c db_name # connect to database db_name
+  \dt # to list all tables within the database after connection
+  \conninf # to list the current conncection info, database, user and port
+  \du # ist all roles created
   ```
 
+* OPTIONAL running postgres locally 
+  ```sh
+  ./start-services.sh
+  psql postgres
+  CREATE ROLE newUser WITH LOGIN PASSWORD ‘password’; # Create new user with pwdd
+  ALTER ROLE newUser CREATEDB; # Allow new user to create databases
+  \q # Quit current session
+  psql postgres -U newuser # Login with new user 
+  \conninfo # Check the current connection details.
+  ```
 
 Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
 

@@ -47,7 +47,7 @@ def create_sale():
         with conn.cursor() as cursor:
             cursor.execute(CREATE_SOLD_TABLE)
             cursor.execute(INSERT_SOLD_TABLE, (car_id, sale, date,))
-    return {"message" : f"Sold {car_id} for {sale} on {date}."}, 201
+    return {"message" : f"Sold car with id {car_id} for {sale} on {date}."}, 201
 
 
 if __name__ == "__main__":
