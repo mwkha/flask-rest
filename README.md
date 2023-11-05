@@ -112,10 +112,6 @@ The project uses python, insomnia for requests and postgres using docker OR brew
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-* Install requirements.txt file by running
-  ```sh
-  pip3 install -r requirements.txt
-  ```
 * Configure docker-compose postgres username, password and db name then run
   ```sh
   docker-compose up -d
@@ -134,7 +130,12 @@ The project uses python, insomnia for requests and postgres using docker OR brew
   \du # ist all roles created
   ```
 
-* OPTIONAL running postgres locally 
+## OPTIONAL running app + postgres locally 
+* Install requirements.txt file by running
+  ```sh
+  pip3 install -r requirements.txt
+  ```
+* Start postgres service
   ```sh
   ./services.sh start
   psql postgres
