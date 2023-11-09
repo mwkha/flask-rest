@@ -121,7 +121,7 @@ The project uses python, insomnia for requests and postgres using docker OR brew
   docker-compose up -d
   docker-compose ps
   ```
-* POST requests can be made to endpoints
+* POST requests can be made to endpoints 
   ```sh
   /api/car accepts json format "{'brand' : 'mazda'}"
   /api/transaction accepts json format "{'car_id' : 1, 'sale_price' : 30000}"
