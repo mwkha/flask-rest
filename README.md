@@ -112,10 +112,19 @@ The project uses python, insomnia for requests and postgres using docker OR brew
 <!-- USAGE EXAMPLES -->
 ## Usage
 
+* Ensure .env db url is using host.docker.internal as below
+  ```sh
+  DATABASE_URL=postgres://user:pwd@host.docker.internal:5432/test_db
+  ```
 * Configure docker-compose postgres username, password and db name then run
   ```sh
   docker-compose up -d
   docker-compose ps
+  ```
+* POST requests can be made to endpoints
+  ```sh
+  /api/car accepts json format "{'brand' : 'mazda'}"
+  /api/transaction accepts json format "{'car_id' : 1, 'sale_price' : 30000}"
   ```
 * To enter into postgres service running in docker use
   ```sh
@@ -130,12 +139,24 @@ The project uses python, insomnia for requests and postgres using docker OR brew
   \du # ist all roles created
   ```
 
-## OPTIONAL running app + postgres locally 
+## OPTIONAL 1 running app locally + postgres via docker
 * Install requirements.txt file by running
   ```sh
   pip3 install -r requirements.txt
   ```
-* Start postgres service
+* Update .env file to use localhost instead of host.docker.internal
+  ```sh
+  DATABASE_URL=postgres://user:pwd@localhost:5432/test_db
+  ```
+* Update .env file to use localhost instead of host.docker.internal
+
+
+## OPTIONAL 2 running both app + postgres locally.
+* Install requirements.txt file by running
+  ```sh
+  pip3 install -r requirements.txt
+  ```
+* Start postgres service locally
   ```sh
   ./services.sh start
   psql postgres
